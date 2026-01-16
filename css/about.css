@@ -1,0 +1,215 @@
+/* ===========================
+   VARIABLES (estética motos)
+=========================== */
+:root {
+  --primary: #55d43b;        /* Negro asfalto */
+  --accent: #060110;         /* Rojo deportivo */
+  --bg: #ffffff;             /* Fondo limpio */
+  --text: #111111;           /* Negro suave */
+  --gray: #f2f2f2;           /* Gris metal */
+  --radius: 4px;             /* Bordes rectos, estilo mecánico */
+}
+
+/* ===========================
+   RESET
+=========================== */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Inter", system-ui, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+}
+
+/* ===========================
+   HEADER
+=========================== */
+header {
+  padding: 1rem 1.5rem;
+  border-bottom: 2px solid var(--primary);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--primary);
+}
+
+.logo a {
+  text-decoration: none;
+  color: var(--accent);
+  font-weight: 700;
+  font-size: 1.3rem;
+  letter-spacing: 1px;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  gap: 1.2rem;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-list a {
+  text-decoration: none;
+  color: white;
+  font-size: 0.95rem;
+  font-weight: 500;
+}
+
+.nav-list a:hover {
+  color: var(--accent);
+}
+
+/* ===========================
+   MAIN
+=========================== */
+main {
+  padding: 1.5rem;
+}
+
+/* ===========================
+   HERO (estilo catálogo motos)
+=========================== */
+.hero {
+  background: linear-gradient(135deg, #0d0d0d, #1a1a1a);
+  color: white;
+  padding: 2.5rem 1.5rem;
+  border-radius: var(--radius);
+  margin-bottom: 2rem;
+  border-left: 4px solid var(--accent);
+}
+
+.hero h1 {
+  margin: 0 0 0.5rem 0;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.btn-primary {
+  display: inline-block;
+  background: var(--accent);
+  color: white;
+  padding: 0.6rem 1.2rem;
+  border-radius: var(--radius);
+  text-decoration: none;
+  font-weight: 600;
+  margin-top: 1rem;
+  letter-spacing: 0.5px;
+}
+
+.btn-primary:hover {
+  background: #c62832;
+}
+
+/* ===========================
+   PRODUCTOS (cartas estilo motos)
+=========================== */
+.products-grid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.product-card {
+  border: 2px solid #ddd;
+  padding: 1rem;
+  border-radius: var(--radius);
+  background: white;
+  transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-4px);
+  border-color: var(--accent);
+}
+
+.product-card img {
+  width: 100%;
+  border-radius: var(--radius);
+  object-fit: cover;
+  max-height: 220px;
+}
+
+.price {
+  font-weight: 700;
+  color: var(--accent);
+  font-size: 1.1rem;
+}
+
+.btn-secondary {
+  background: var(--primary);
+  color: white;
+  border: none;
+  padding: 0.5rem 0.9rem;
+  border-radius: var(--radius);
+  cursor: pointer;
+  margin-top: 0.5rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.btn-secondary:hover {
+  background: var(--accent);
+}
+
+/* ===========================
+   FOOTER
+=========================== */
+footer {
+  text-align: center;
+  padding: 1rem;
+  border-top: 2px solid var(--primary);
+  font-size: 0.85rem;
+  background: #0d0d0d;
+  color: white;
+}
+
+/* ===========================
+   RESPONSIVE
+=========================== */
+
+/* Móviles */
+@media (max-width: 576px) {
+  header {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .products-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Tablets */
+@media (min-width: 577px) and (max-width: 768px) {
+  .products-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Portátiles */
+@media (min-width: 769px) and (max-width: 1200px) {
+  main {
+    padding: 2rem 3rem;
+  }
+
+  .products-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Escritorio */
+@media (min-width: 1201px) {
+  main {
+    padding: 2.5rem 6rem;
+  }
+
+  .products-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
