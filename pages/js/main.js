@@ -1,19 +1,19 @@
 const productos = [
   {
     id: 1,
-    nombre: "Auriculares inalámbricos",
-    descripcion: "Auriculares Bluetooth con cancelación de ruido.",
-    precio: 59.99,
+    nombre: "santis motor bike",
+    descripcion: "la moto más rápida del mundo.",
+    precio: 5900.99,
     moneda: "EUR",
-    imagen: "https://images.unsplash.com/photo-1505740420928-5e560c06d30e"
+    imagen: "https://upload.wikimedia.org/wikipedia/commons/1/1e/Moby_AV-45.jpg"
   },
   {
     id: 2,
-    nombre: "Mochila urbana",
-    descripcion: "Mochila moderna con compartimento para portátil.",
-    precio: 39.90,
+    nombre: "harley davidson",
+    descripcion: "Te despeinara solo si tienes pelo.",
+    precio: 3900.90,
     moneda: "EUR",
-    imagen: "https://images.unsplash.com/photo-1514474959185-147d6f8f0f07"
+    imagen: "https://images.unsplash.com/photo-1558980664-2cd663cf8dde?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
   }
 ];
 
