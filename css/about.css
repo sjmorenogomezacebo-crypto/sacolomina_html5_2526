@@ -169,7 +169,9 @@ footer {
   color: white;
 }
 
-/*RESPONSIVE*/
+/* ===========================
+   RESPONSIVE
+=========================== */
 
 /* Móviles */
 @media (max-width: 576px) {
