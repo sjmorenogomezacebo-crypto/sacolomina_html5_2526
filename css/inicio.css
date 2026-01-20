@@ -8,6 +8,7 @@
   --text: #111111;           /* Negro suave */
   --gray: #f2f2f2;           /* Gris metal */
   --radius: 4px;             /* Bordes rectos, estilo mecánico */
+  --border-card: #06011055;
 }
 
 /* ===========================
@@ -125,7 +126,8 @@ main {
 
 .product-card:hover {
   transform: translateY(-4px);
-  border-color: var(--accent);
+  border-color: var(--border-card);
+  box-shadow: 5px 5px 5px var(--border-card);
 }
 
 .product-card img {
