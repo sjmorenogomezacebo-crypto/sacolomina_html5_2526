@@ -8,7 +8,6 @@
   --text: #111111;           /* Negro suave */
   --gray: #f2f2f2;           /* Gris metal */
   --radius: 4px;             /* Bordes rectos, estilo mecánico */
-  --border-card: #06011055;
 }
 
 /* ===========================
@@ -20,12 +19,26 @@
   box-sizing: border-box;
 }
 
+/* === AÑADIDO PARA QUE EL FOOTER BAJE === */
+html, body {
+  height: 100%;
+}
+
 body {
   margin: 0;
   font-family: "Inter", system-ui, sans-serif;
   background: var(--bg);
   color: var(--text);
   line-height: 1.6;
+
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  padding: 1.5rem;
+  flex: 1; /* <-- Esto empuja el footer abajo */
 }
 
 /* ===========================
@@ -65,13 +78,6 @@ header {
 
 .nav-list a:hover {
   color: var(--accent);
-}
-
-/* ===========================
-   MAIN
-=========================== */
-main {
-  padding: 1.5rem;
 }
 
 /* ===========================
@@ -126,8 +132,7 @@ main {
 
 .product-card:hover {
   transform: translateY(-4px);
-  border-color: var(--border-card);
-  box-shadow: 5px 5px 5px var(--border-card);
+  border-color: var(--accent);
 }
 
 .product-card img {

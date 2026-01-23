@@ -19,12 +19,26 @@
   box-sizing: border-box;
 }
 
+/* === AÑADIDO PARA QUE EL FOOTER BAJE === */
+html, body {
+  height: 100%;
+}
+
 body {
   margin: 0;
   font-family: "Inter", system-ui, sans-serif;
   background: var(--bg);
   color: var(--text);
   line-height: 1.6;
+
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  padding: 1.5rem;
+  flex: 1; /* <-- Esto empuja el footer abajo */
 }
 
 /* ===========================
@@ -64,13 +78,6 @@ header {
 
 .nav-list a:hover {
   color: var(--accent);
-}
-
-/* ===========================
-   MAIN
-=========================== */
-main {
-  padding: 1.5rem;
 }
 
 /* ===========================
