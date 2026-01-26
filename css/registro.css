@@ -2,11 +2,11 @@
    VARIABLES (estética motos)
 =========================== */
 :root {
-  --primary: #55d43b;        /* Negro asfalto */
-  --accent: #060110;         /* Rojo deportivo */
+  --primary: #55d43b;        /* verde asfalto */
+  --accent: #060110;         /* negro deportivo */
   --bg: #ffffff;             /* Fondo limpio */
   --text: #111111;           /* Negro suave */
-  --gray: #f2f2f2;           /* Gris metal */
+  --gray: #f2f2f2;           /* blanco metal */
   --radius: 4px;             /* Bordes rectos, estilo mecánico */
 }
 
