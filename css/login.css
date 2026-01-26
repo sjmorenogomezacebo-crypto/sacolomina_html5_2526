@@ -220,3 +220,22 @@ footer {
     grid-template-columns: repeat(4, 1fr);
   }
 }
+
+/* ===========================
+   ESTILO ADICIONAL PARA ABOUT*/
+
+  .container {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 2.5rem 2rem;
+
+  background: #ffffff;
+  border-radius: var(--radius);
+
+  border: 2px solid #e5e5e5;         /* borde base neutro */
+  border-top: 3px solid var(--primary); /* toque verde */
+  border-bottom: 3px solid var(--primary);
+
+  box-shadow:
+    0 6px 18px rgba(0, 0, 0, 0.08);
+}
